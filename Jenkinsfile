@@ -5,23 +5,23 @@ pipeline {
         stage('Checkout')   {
             steps {
                 echo "Checkout the source code from the git repository"
-                git clone 'https://github.com/atharva0300/calculator'
+                git url: 'https://github.com/atharva0300/calculator'
             }
         }
 
         stage('Build')  {
             steps {
                 echo "Execute build commands or scripts"
-                chmod u+x hello.sh
-                ./hello.sh
+                sh 'chmod u+x hello.sh'
+                sh './hello.sh'
             }
         }
 
         stage('Test')   {
             steps{
                 echo "Execute test commands or scripts"
-                chmod u+x test.sh
-                ./test.sh
+                sh 'chmod u+x test.sh'
+                sh './test.sh'
             }
         }
     }
