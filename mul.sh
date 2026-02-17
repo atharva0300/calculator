@@ -11,3 +11,4 @@ do
     i=`expr $i + 1`
 done
 echo "new update"
+echo "new update"
