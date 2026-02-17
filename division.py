@@ -6,3 +6,5 @@ if b==0 :
     print("Invalid value of b")
 else : 
     print("Result : " , a/b)
+
+print("update")
