@@ -7,4 +7,4 @@ if b==0 :
 else : 
     print("Result : " , a/b)
 
-print("update")
+print("new update")
